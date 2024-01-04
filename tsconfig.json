@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "target": "es6",
+    "module": "es2020",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "outDir": "./build",
+    "rootDir": "src",
+    "types": ["vite-plugin-pages/client", "vite-plugin-vue-layouts/client", "vite/client","pinia-plugin-persist"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@api*": ["src/api"],
+      "@router*": ["src/router"],
+      "@pages*": ["src/pages"],
+    }
+  },
+  "include": ["src/**/*", "./auto-imports.d.ts"],
+  "exclude": ["node_modules"]
+}
